@@ -1,17 +1,20 @@
 # go-pkg-database
 
-A comprehensive Go package providing database utilities for MongoDB and PostgreSQL with GORM, featuring connection management, transactions, health checks, and enhanced data types.
+A comprehensive Go package providing database utilities for MongoDB and
+PostgreSQL with GORM, featuring connection management, transactions, health
+checks, and enhanced data types.
 
 ## 🚀 Features
 
--   **🗄️ MongoDB**: Connection management, transactions, health checks
--   **🐘 PostgreSQL**: GORM integration with connection pooling
--   **🆔 Base Models**: UUID-based models with timestamps and soft delete
--   **📋 JSONB Support**: PostgreSQL JSONB column type with helper methods
--   **🔄 Transaction Management**: Safe transaction handling with rollback and savepoints
--   **❤️ Health Checks**: Built-in connection health monitoring
--   **⚡ Connection Pooling**: Optimized connection management
--   **🔒 Type Safety**: Strongly-typed database operations
+- **🗄️ MongoDB**: Connection management, transactions, health checks
+- **🐘 PostgreSQL**: GORM integration with connection pooling
+- **🆔 Base Models**: UUID-based models with timestamps and soft delete
+- **📋 JSONB Support**: PostgreSQL JSONB column type with helper methods
+- **🔄 Transaction Management**: Safe transaction handling with rollback and
+  savepoints
+- **❤️ Health Checks**: Built-in connection health monitoring
+- **⚡ Connection Pooling**: Optimized connection management
+- **🔒 Type Safety**: Strongly-typed database operations
 
 ## 📦 Installation
 
@@ -473,11 +476,11 @@ config := mongo.MongoConfig{
 
 **Read Preference Options:**
 
--   `"primary"` - Read from primary only
--   `"secondary"` - Read from secondary only
--   `"primaryPreferred"` - Prefer primary, fallback to secondary
--   `"secondaryPreferred"` - Prefer secondary, fallback to primary
--   `"nearest"` - Read from nearest member
+- `"primary"` - Read from primary only
+- `"secondary"` - Read from secondary only
+- `"primaryPreferred"` - Prefer primary, fallback to secondary
+- `"secondaryPreferred"` - Prefer secondary, fallback to primary
+- `"nearest"` - Read from nearest member
 
 ### PostgreSQL Configuration
 
@@ -503,17 +506,17 @@ config := sql.GormConfig{
 
 **SSL Mode Options:**
 
--   `"disable"` - No SSL
--   `"require"` - SSL required
--   `"verify-ca"` - Verify CA certificate
--   `"verify-full"` - Full certificate verification
+- `"disable"` - No SSL
+- `"require"` - SSL required
+- `"verify-ca"` - Verify CA certificate
+- `"verify-full"` - Full certificate verification
 
 **Log Levels:**
 
--   `logger.Silent` - No logging
--   `logger.Error` - Error level only
--   `logger.Warn` - Warning and above
--   `logger.Info` - Info and above
+- `logger.Silent` - No logging
+- `logger.Error` - Error level only
+- `logger.Warn` - Warning and above
+- `logger.Info` - Info and above
 
 ## ❤️ Health Checks
 
@@ -737,15 +740,18 @@ db.CreateInBatches(users, 100)
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
+for details.
 
 ## 🙏 Acknowledgments
 
--   Built on top of [GORM](https://gorm.io/) for PostgreSQL support
--   Uses the official [MongoDB Go Driver](https://github.com/mongodb/mongo-go-driver)
--   Inspired by modern database patterns and best practices
--   Designed for production reliability and developer experience
+- Built on top of [GORM](https://gorm.io/) for PostgreSQL support
+- Uses the official
+  [MongoDB Go Driver](https://github.com/mongodb/mongo-go-driver)
+- Inspired by modern database patterns and best practices
+- Designed for production reliability and developer experience
 
 ---
 
-**Note**: This package requires Go 1.22 or later for UUID support and modern language features.
+**Note**: This package requires Go 1.22 or later for UUID support and modern
+language features.
